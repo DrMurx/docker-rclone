@@ -1,9 +1,9 @@
 # Rclone Docker Image
 
-A Docker image with shell for [Rclone](http://rclone.org/).
+This image allows to run an one-off command of [Rclone](http://rclone.org/).
 
-> Rclone is a command line program to sync files and directories to and from
->
+Rclone is a command line program to sync files and directories to and from
+
 * Google Drive
 * Amazon S3
 * Openstack Swift / Rackspace cloud files / Memset Memstore
@@ -18,20 +18,16 @@ A Docker image with shell for [Rclone](http://rclone.org/).
 
 ## Installation
 
-Pull [the image](https://hub.docker.com/r/valentine/rclone/) from Docker Hub:
+Pull [the latest image](https://hub.docker.com/r/drmurx/rclone/) from Docker Hub:
 
-    docker pull valentine/rclone:latest
+    docker pull drmurx/rclone
 
-Create a container using `docker run`:
+Run an rclone command using `docker run`:
     
-    docker run -ti \
-      -v /path/to/files:/files \
-      valentine/rclone:latest
-    
-The above, in one line:
-
-    docker run -ti /local/path/to/files:/files valentine/rclone:latest
+    docker run -ti -v /path/to/files:/files drmurx/rclone <PARAMETERS>
 
 ## Licence
 
 Code licensed under The MIT License (MIT).
+
+Based on https://github.com/valentine/docker-rclone-sh

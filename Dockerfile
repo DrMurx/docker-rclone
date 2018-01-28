@@ -1,8 +1,9 @@
 # Copyright 2017 Valentine C
+# Copyright 2018 Jan Kunzmann
 
 FROM alpine:3.7
 
-MAINTAINER Valentine C
+MAINTAINER Jan Kunzmann <jan-docker@phobia.de>
 
 ENV GOPATH /go
 
