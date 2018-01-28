@@ -12,4 +12,4 @@ RUN apk add --no-cache go git musl-dev ca-certificates \
 	&& rm -rf /go /tmp/* \
 	&& apk del go git musl-dev
 
-CMD ["/bin/sh"]
+ENTRYPOINT ["/usr/bin/rclone"]
